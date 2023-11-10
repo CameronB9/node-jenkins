@@ -7,5 +7,10 @@ pipeline {
                 sh 'node --version'
             }
         }
+        stage('build') {
+            steps {
+                sh 'node app.js'
+            }
+        }
     }
 }
